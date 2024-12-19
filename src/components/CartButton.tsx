@@ -1,9 +1,10 @@
 import { Button } from './ui/button';
 import { ShoppingCart } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useAppSelector } from '@/hooks';
 
 const CartButton = () => {
-  const numItemsInCart = 5;
+  const numItemsInCart = useAppSelector((state) => state.cartState.numItemsInCart);
   
   return (
     <Button asChild variant='outline' size='icon' className='flex justify-center items-center relative'>
