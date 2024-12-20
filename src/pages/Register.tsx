@@ -36,13 +36,12 @@ function Register() {
             <FormInput type='text' name='username' />
             <FormInput type='email' name='email'  />
             <FormInput type='password' name='password' />
-            <Button type='submit' variant='default' className='w-full mb-4'>Submit</Button>
+            <SubmitBtn text='Register' className='w-full mb-4' />
             <p className='text-center mt-4'>
               Already a member? <Button type="button" asChild variant='link'><Link to='/login'>Login</Link></Button>
             </p>
           </Form>
         </CardContent>
-
       </Card>
     </section>
   }
